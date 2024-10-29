@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz do Homem-Aranha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <h1>Quiz do Homem-Aranha</h1>
+        <div id="start-screen">
+            <button onclick="startGame('easy')">Fácil</button>
+            <button onclick="startGame('medium')">Médio</button>
+            <button onclick="startGame('hard')">Difícil</button>
+        </div>
+        
+        <div id="question-container" style="display: none;">
+            <p id="timer"></p>
+            <p id="question"></p>
+            <ul id="answer-buttons"></ul>
+        </div>
+
+        <div id="end-screen" style="display: none;">
+            <h2>Tempo Esgotado! Você voltou ao início.</h2>
+            <button onclick="restartQuiz()">Tentar novamente</button>
+        </div>
+
+        <div id="congrats-screen" style="display: none;">
+            <h2>Parabéns! Você completou o quiz!</h2>
+            <button onclick="restartQuiz()">Jogar novamente</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
